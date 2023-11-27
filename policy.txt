@@ -1,0 +1,7 @@
+R1: Deny if OR(SAE, JET)
+R2: Permit if AND(SAE, JET)
+P1: DOV(R1, R2)
+R3: Permit if AND(XBH, VLV)
+R4: Deny if JXH
+P2: DOV(R3, R4)
+P: DOV(P1, P2)
